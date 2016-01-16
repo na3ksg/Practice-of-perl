@@ -40,3 +40,15 @@ my $score_list = "Math : $score_math\n";.
 
 # print関数：計算結果の出力
 print $score_list;
+
+# 配列の宣言とコマンドライン引数の受け取り
+my @nums = @ARGV;
+
+# foreach文：和の計算
+my $total;
+foreach my $num(@nums){
+	$total += $num;
+}
+
+# 和の出力
+print "Total:$total\n";
