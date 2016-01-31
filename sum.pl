@@ -35,8 +35,8 @@ my $score_total = $score_english + $score_math;
 
 # 文字列：計算結果を見やすい形に編集
 my $score_list = "Math : $score_math\n";.
-				 "English : $score_english\n";.
-				 "Total : $score_total\n";
+"English : $score_english\n";.
+"Total : $score_total\n";
 
 # print関数：計算結果の出力
 print $score_list;
@@ -63,9 +63,9 @@ foreach my $subject (keys %scores){
 	# 制御構文：80点以上はgood
 	if ($score >= 80) {
 		print "$subject : good\n";
-	} elsif ($score >= 60){
-		print "$subject : pass\n";
-	} else {
-		print "$subject : failed\n";
-	}
-}
+		} elsif ($score >= 60){
+			print "$subject : pass\n";
+			} else {
+				print "$subject : failed\n";
+			}
+		}
